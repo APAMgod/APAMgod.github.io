@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<title>
+  Vida sin adicciones
+</title>
+<html>
+<style>
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+}
+
+body{
+  min-height: 100vh;
+}
+header .brand img{
+  height: 60px;
+}
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to left, rgba(74,164,195,.8), rgba(0,0,0,0.1)), 
+  url(foto3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.section-main h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+  text-shadow: 0 0 3px #fff, 0 0 3px #000000;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  transition: 0.6s;
+}
+
+header.down{
+  background: #1483D5;
+  padding: 15px 80px;
+}
+
+header .brand{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .menu ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu ul li{
+	list-style: none;
+}
+
+header .menu a{
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+.section-two{
+  padding: 20px;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px){
+  header, header.down{
+  	padding: 20px 40px;
+  }
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    min-width: 330px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu ul{
+	  flex-direction: column;
+	}
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 600px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.body {
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #286bcf;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elem {
+  list-style: none;
+}
+
+.icon {
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+.menu-icon {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- fonr awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+	<header>
+      <a href="Apeam.html" class="brand">
+      	<img src="white.png">
+      </a>
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <ul>
+        	<li><a href="Apeam.html">Inicio</a></li>
+        	<li><a href="reciclaje.html">Reciclaje escolar</a></li>
+        	<li><a href="adicciones.html">Vida sin adicciones</a></li>
+        	<li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+    <section class="section-main">
+      <h1>Vida sin adicciones</h1>
+    </section>
+
+    
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('down', window.scrollY > 0);
+
+	    //change logo
+	    var logo = document.querySelector(".brand img");
+		if (window.scrollY>0) {
+			logo.setAttribute('src', 'white.png');
+		}else{
+			logo.setAttribute('src', 'white.png');
+		}
+
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+</body>
+</html>
+
+
+
+
+
+<h2 class="titulo"></h2>
+
+
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+  </head>
+  <body>
+    <div class="row">
+    <div class="left"> 
+      <img src="foto/13.jpg" alt="">
+    </div>
+
+    <div class="right">
+<div class="content">
+  <H2>¿Qué es una adicción?</H2>
+  <p>
+    Una adicción es una enfermedad crónica caracterizada por la búsqueda y el consumo compulsivo 
+    de sustancias o la participación en actividades a pesar de sus consecuencias negativas. 
+    Se produce por cambios en el cerebro que generan un fuerte deseo por la sustancia o actividad
+     y dificultan el control de su consumo o realización.
+  </p>
+</div>
+
+    </div>
+  </div>
+
+  </body>
+  </html>
+
+
+
+
+
+
+  <h2 class="titulo"></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="stylep.css">
+    </head>
+    <body>
+      <div class="row">
+      <div class="left"> 
+        <img src="foto/14.jpg" alt="">
+      </div>
+  
+      <div class="right">
+  <div class="content">
+    <H2>¿Qué es una vida sin adicciones?</H2>
+    <ol>
+  <p> 
+      Una vida sin adicciones es aquella donde tienes libertad de elección y control 
+      sobre tus acciones. Te permite enfocar tu energía en actividades y relaciones 
+      que te aporten bienestar y crecimiento personal. Disfrutas de una mejor salud física
+       y mental, y tus relaciones interpersonales se fortalecen.
+  
+  
+  
+    </p>
+    </ol>
+  </div>
+  
+      </div>
+    </div>
+  
+    </body>
+    </html>
+  
+  
+  
+  
+  
+ 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="titulo"></h2>
+
+
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+  </head>
+  <body>
+    <div class="row">
+    <div class="left"> 
+      <img src="foto/15.jpg" alt="">
+    </div>
+
+    <div class="right">
+<div class="content">
+  <H2>Tipos de adicción:</H2>
+ 
+  <ul>
+  <li><strong>Adicciones a sustancias:</strong></li> Alcoholismo, tabaquismo, drogadicción, etc.
+ 
+  <strong><li>Adicciones conductuales:</li></strong> Juego patológico, adicción al trabajo, adicción a las redes sociales, etc.
+  
+  
+
+
+
+
+
+  
+</div>
+
+    </div>
+  </div>
+
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="titulo"></h2>
+
+
+
+
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="stylep.css">
+    </head>
+    <body>
+      <div class="row">
+      <div class="left"> 
+        <img src="foto/16.jpg" alt="">
+      </div>
+  
+      <div class="right">
+  <div class="content">
+    <H2>
+      Alcoholismo: Una enfermedad compleja que requiere atención y apoyo</H2>
+    
+  <p> 
+  <ul>
+    El alcoholismo, también conocido como trastorno por consumo de alcohol, 
+    es una enfermedad crónica y compleja que se caracteriza por un consumo excesivo de alcohol
+     que genera consecuencias negativas en la salud física, mental y social de la persona.
+</ul>
+     <strong><ul>Síntomas del alcoholismo:</ul></strong>
+     <ul>
+      <li><strong>Necesidad incontrolable de consumir alcohol:</strong></li>
+       La persona siente una fuerte compulsión por beber, incluso si sabe que le está causando daño.
+      <li><strong>Pérdida de control: </strong></li>Le resulta difícil limitar la cantidad de alcohol que consume o detenerse una vez que comienza a beber.
+      <li><strong>Dependencia física:</strong></li> El cuerpo de la persona se ha adaptado al alcohol y necesita seguir consumiéndolo para evitar los síntomas de abstinencia, como temblor, náuseas, ansiedad y sudoración.
+      <li><strong>Tolerancia:</strong></li> La persona necesita cada vez más alcohol para obtener el mismo efecto.
+      Negación: La persona puede negar que tiene un problema con el alcohol o minimizar sus consecuencias.
+
+
+     </ul>
+
+     <strong><ul>Consecuencias del alcoholismo:</ul></strong>
+     <ul>
+      <li><strong>Problemas de salud física: </strong></li>
+      El consumo excesivo de alcohol puede provocar daños en el hígado, el corazón, el cerebro y otros órganos. También aumenta el riesgo de padecer cáncer, enfermedades cardíacas y accidentes
+      <li><strong>Problemas de salud mental: </strong></li>El alcoholismo puede empeorar o desencadenar problemas de salud mental como depresión, ansiedad y psicosis.
+      <li><strong>Problemas sociales:</strong></li> El consumo excesivo de alcohol puede dañar las relaciones con la familia, los amigos y el trabajo. También puede conducir a problemas legales y financieros.
+
+     </ul>
+
+     <strong><ul>Tratamiento del alcoholismo:</ul></strong>
+
+     El tratamiento del alcoholismo generalmente incluye una combinación de terapia,
+      medicamentos y grupos de apoyo. La terapia puede ayudar a la persona a identificar
+       las causas de su consumo de alcohol y desarrollar estrategias para controlarlo.
+        Los medicamentos pueden ayudar a aliviar los síntomas de abstinencia y reducir 
+        el deseo de beber. Los grupos de apoyo pueden brindar a la persona un espacio 
+        seguro para compartir sus experiencias y 
+     recibir apoyo de otras personas que están luchando contra el alcoholismo.
+
+
+
+
+
+
+    <strong><ul>Recursos para el alcoholismo:</ul></strong> 
+
+     Si tú o alguien que conoces lucha contra el alcoholismo, 
+     existen muchos recursos disponibles para ayudar. 
+     Puedes encontrar información y apoyo en línea, en centros de tratamiento y en grupos de apoyo.
+     
+     <strong><ul>Aquí hay algunos recursos en México:</ul></strong>
+     
+    <ul> Línea de la Vida: 800 911 2000</ul>
+     <ul>Centros de Integración Social (CIS): http://www.cij.org.mx/</ul>
+     <ul>Alcohólicos Anónimos: https://www.aamexico.org.mx/</ul>
+
+     <strong><ul>Recuerda:</ul></strong>
+     
+     <li>El alcoholismo es una enfermedad tratable.</li>
+     <li>Con el tratamiento adecuado, las personas con alcoholismo pueden 
+     vivir vidas sanas y productivas.</li>
+     <li>Si tú o alguien que conoces necesita ayuda, no dudes en buscarla.</li>
+     <strong>Es importante destacar que la información proporcionada aquí no sustituye
+      el consejo médico profesional. Si tienes inquietudes sobre tu salud o la de 
+      alguien que conoces, consulta con un médico o un profesional de la salud mental.</strong>
+
+
+
+
+
+
+
+
+
+
+
+  
+    </p>
+    
+  </div>
+  
+      </div>
+    </div>
+  
+    </body>
+    </html>
+  
+  
+  
+  
+  
+    <h2 class="titulo"></h2>
+  
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="stylep.css">
+    </head>
+    <body>
+      <div class="row">
+      <div class="left"> 
+        <img src="foto/18.jpg" alt="">
+      </div>
+  
+      <div class="right">
+  <div class="content">
+    <H2>Adicción a la tecnología: Un desafío de la era digital</H2>
+    
+  <p> 
+    <ul>La adicción a la tecnología, también conocida como nomofobia o trastorno por uso de internet, se refiere al uso excesivo e incontrolable de dispositivos electrónicos y plataformas digitales, como teléfonos inteligentes, computadoras, tablets y redes sociales. Esta dependencia genera consecuencias negativas en la vida personal, académica, laboral y social de la persona.</ul>
+
+   <ul><strong> Síntomas de la adicción a la tecnología:</strong></ul>
+    
+    <li><strong>Necesidad constante de usar dispositivos electrónicos:</strong></li> La persona siente una urgencia incontrolable por revisar su teléfono, computadora o acceder a internet, incluso en situaciones inapropiadas o cuando realiza otras actividades.
+    <li><strong>Pérdida de control del tiempo:</strong></li>  La persona pasa una cantidad excesiva de tiempo frente a las pantallas, descuidando otras responsabilidades o actividades importantes.
+    <li><strong>Aislamiento social: </strong></li> La interacción social presencial se ve reducida o reemplazada por la interacción virtual, lo que puede generar problemas en las relaciones interpersonales.
+    <li><strong>Síntomas de abstinencia:</strong></li> Cuando la persona no tiene acceso a sus dispositivos o internet, experimenta síntomas como ansiedad, irritabilidad, tristeza y dificultad para concentrarse.
+    <li><strong>Impacto en la salud física:</strong></li> El uso excesivo de dispositivos electrónicos puede provocar problemas de sueño, fatiga visual, dolores de cabeza y problemas posturales.
+    
+    
+    <ul><strong>Consecuencias de la adicción a la tecnología:</strong></ul>
+    
+    <li><strong>Problemas académicos o laborales:</strong></li> El rendimiento académico o laboral puede verse afectado por la falta de concentración, el tiempo dedicado a las pantallas y la procrastinación.
+    <li><strong>Problemas en las relaciones personales:</strong></li> La adicción a la tecnología puede generar conflictos con familiares, amigos y pareja, debido al descuido de las relaciones interpersonales y la falta de atención presencial.
+    <li><strong>Problemas de salud mental:</strong></li>  La adicción a la tecnología puede aumentar el riesgo de sufrir depresión, ansiedad, baja autoestima y problemas de sueño.
+    <li><strong>Dependencia emocional: </strong></li>La persona puede desarrollar una dependencia emocional de sus dispositivos y plataformas digitales, buscando en ellas satisfacción, escape y conexión social.
+   
+    <ul><strong>Prevención de la adicción a la tecnología:</strong></ul>
+    <li><strong>Establecer límites:</strong></li> Es importante establecer horarios específicos para el uso de dispositivos electrónicos y plataformas digitales, y evitar su uso en momentos como comidas familiares, antes de dormir o durante actividades importantes.
+    <li><strong>Promover actividades alternativas: </strong></li>Fomentar la realización de actividades físicas, hobbies, interacción social presencial y pasatiempos que no impliquen el uso de tecnología.
+    <li><strong>Ser consciente del tiempo:</strong></li>  Utilizar aplicaciones o herramientas que permitan monitorear el tiempo dedicado al uso de dispositivos electrónicos y redes sociales.
+    <li><strong>Buscar ayuda profesional:</strong></li> Si la adicción a la tecnología está generando un impacto significativo en la vida de la persona, es recomendable buscar ayuda profesional de un psicólogo o terapeuta especializado en adicciones.
+    
+    <ul><strong>Recursos para la adicción a la tecnología en México:</strong></ul>
+    
+    <li><strong>Línea de la Vida:</strong></li> 800 911 2000
+    <li><strong>Centros de Integración Social (CIS):</strong></li>http://www.cij.org.mx/
+    <li><strong>Programa Nacional de Adicciones:</strong></li> [se quitó una URL no válida]
+    
+    <ul><strong>Recuerda:</strong></ul>
+    
+    <li>La adicción a la tecnología es un problema real que puede afectar a personas de todas las edades.</li>
+    <li>Es importante reconocer los síntomas y tomar medidas para prevenir o tratar esta adicción.</li>
+    <li>Existen recursos disponibles para ayudar a las personas que luchan contra la adicción a la tecnología.</li>
+    <strong>Es importante destacar que la información proporcionada aquí no sustituye el consejo médico profesional. Si tienes inquietudes sobre tu salud o la de alguien que conoces, consulta con un médico o un profesional de la salud mental.</strong>
+
+     
+
+
+
+
+
+  
+    </p>
+    
+  </div>
+  
+      </div>
+    </div>
+  
+    </body>
+    </html>
+  
+  
+  
+  
+  
+    <h2 class="titulo"></h2>
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="stylep.css">
+    </head>
+    <body>
+      <div class="row">
+      <div class="left"> 
+        <img src="foto/17.jpg" alt="">
+      </div>
+  
+      <div class="right">
+  <div class="content">
+    <H2>
+      
+Tabaquismo: Una amenaza silenciosa para la salud</H2>
+    
+  <p> 
+  <ul>
+    El tabaquismo es un hábito nocivo que implica el consumo habitual de productos 
+    elaborados con tabaco, principalmente cigarrillos. Se caracteriza por la dependencia
+     a la nicotina, una sustancia altamente adictiva presente en el tabaco.
+</ul>
+     
+
+<ul><strong>Consecuencias del tabaquismo:
+</strong></ul>
+<ul>El tabaquismo es la principal causa de muerte prevenible a nivel mundial. Afecta negativamente la salud física y mental de quienes lo practican, además de generar un impacto significativo en su entorno. Entre las principales consecuencias del tabaquismo se encuentran:</ul>
+
+<li><strong>Enfermedades respiratorias: </strong></li>El tabaquismo es el principal factor de riesgo para desarrollar enfermedades pulmonares como la Enfermedad Pulmonar Obstructiva Crónica (EPOC), el enfisema pulmonar y el cáncer de pulmón.
+<li><strong>Enfermedades cardiovasculares:</strong></li> El consumo de tabaco aumenta el riesgo de sufrir enfermedades cardíacas, accidentes cerebrovasculares y aneurismas.
+<li><strong>Cáncer: </strong></li>El tabaquismo es un factor de riesgo para desarrollar diversos tipos de cáncer, incluyendo cáncer de pulmón, boca, garganta, laringe, esófago, páncreas, riñón, vejiga y cérvix.
+<li><strong>Problemas de fertilidad:</strong></li> El tabaquismo puede afectar la fertilidad tanto en hombres como en mujeres.
+<li><strong>Daños en el feto:</strong></li> El consumo de tabaco durante el embarazo puede provocar aborto espontáneo, parto prematuro, muerte fetal y malformaciones congénitas.
+
+<ul><strong>Impactos del tabaquismo en el entorno:</strong></ul>
+
+<ul>El tabaquismo no solo afecta a la salud del fumador, sino que también tiene un impacto negativo en las personas que lo rodean. El humo de tabaco de segunda mano contiene más de 7.000 sustancias químicas, de las cuales al menos 69 se han identificado como cancerígenas. <ul><strong>La exposición al humo de segunda mano puede provocar:</strong></ul></ul>
+
+<li><strong>Enfermedades respiratorias en niños y adultos:</strong></li> Infecciones de oído, bronquitis, neumonía y asma.
+<li><strong>Cáncer de pulmón en adultos no fumadores: </strong></li>El humo de segunda mano es la principal causa de cáncer de pulmón en personas que no fuman.
+<li><strong>Problemas cardíacos en adultos:</strong></li> Ataques cardíacos y accidentes cerebrovasculares.
+
+<ul><strong>Cómo dejar de fumar:</strong></ul>
+
+<ul>Dejar de fumar es un proceso desafiante, pero posible. Existen diversos recursos y estrategias disponibles para ayudar a las personas a abandonar este hábito nocivo. Entre ellas se encuentran:</ul>
+
+<li><strong>Terapia conductual: </strong></li>Un terapeuta puede ayudar a la persona a identificar los factores desencadenantes de su consumo de tabaco y desarrollar estrategias para afrontarlos.
+<li><strong>Medicamentos:</strong></li> Existen medicamentos que pueden ayudar a reducir los síntomas de abstinencia y el deseo de fumar.
+<li><strong>Grupos de apoyo: </strong></li> Unirse a un grupo de apoyo puede brindar a la persona la oportunidad de compartir sus experiencias y recibir apoyo de otras personas que están luchando contra el tabaquismo.
+<ul><strong>Recursos para dejar de fumar en México:</strong></ul>
+
+<ul>Si tú o alguien que conoces desea dejar de fumar, existen diversos recursos disponibles para ayudar. Puedes encontrar información y apoyo en línea, en centros de tratamiento y en grupos de apoyo.</ul>
+
+<li><strong>Línea de la Vida:</strong></li> 800 911 2000
+<li><strong>Centros de Integración Social (CIS):</strong></li> http://www.cij.org.mx/
+<li><strong>Programa Nacional de Control de Tabaco: </strong></li>http://www.salud.gob.mx/unidades/cdi/documentos/tabaquismo.pdf
+
+<ul><strong>Recuerda:</strong></ul>
+
+<li>Dejar de fumar es una de las mejores decisiones que puedes tomar para tu salud.</li>
+<li>No estás solo en este proceso. Existen muchos recursos disponibles para ayudarte a dejar de fumar y mantenerte libre del tabaco.</li>
+<li>Con el apoyo adecuado, puedes vencer el tabaquismo y mejorar significativamente tu calidad de vida.</li>
+<strong><ul>Es importante destacar que la información proporcionada aquí no sustituye el consejo médico profesional. Si tienes inquietudes sobre tu salud o la de alguien que conoces, consulta con un médico o un profesional de la salud mental.</ul></strong>
+
+
+
+
+
+
+
+  
+    </p>
+    
+  </div>
+  
+      </div>
+    </div>
+  
+    </body>
+    </html>
+  
+  
+  
+  
+  
+    <h2 class="titulo"></h2>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+    iframe, video {
+      display: block;
+      margin: 1em auto;
+      width: 80%;
+      height: calc(.5625 * 80vw);
+      max-width: 1280px;
+      max-height: 720px;
+      min-width: 320px;
+      min-height: 180px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>HABLEMOS DE - Episodio 1: Las Drogas y Sus Multiples Facetas</h2>
+  
+<video controls>
+  <source src="HABLEMOS DE - Episodio 1 Las Drogas y Sus Multiples Facetas.mp4">
+</video>
+
+  
+</body>
+<p>*Voz creada por Inteligencia Artificial</p>
+</html>
+
+
+
+
+
+
+
+
+
+<h2 class="titulo"></h2>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+    iframe, video {
+      display: block;
+      margin: 1em auto;
+      width: 80%;
+      height: calc(.5625 * 80vw);
+      max-width: 1280px;
+      max-height: 720px;
+      min-width: 320px;
+      min-height: 180px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>ENTREVISTA a FUMADOR</h2>
+  
+<video controls>
+  <source src="ENTREVISTAaFUMADOR.mp4">
+</video>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<h2 class="titulo"></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleg.css">
+</head>
+<body>
+  <div class="ful-img" id="fulImgBox">
+    <img src="imgs-gallery/1.jpg" id="fulImg" alt="">
+    <span onclick="closeImg()">X</span>
+  </div>
+
+  <h1><span>HISTORIETA - Sombras de Eleccion</span></h1>
+
+  <div class="img-gallery">
+    <img src="Sombrasdeeleccion3.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Sombrasdeeleccion2.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Sombrasdeeleccion1.jpg" onclick="openFulImg(this.src)" alt="">
+    
+  </div> 
+  <p>*Imagenes generadas por Inteligencia Artificial</p>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleg.css">
+</head>
+<body>
+  <div class="ful-img" id="fulImgBox">
+    <img src="imgs-gallery/1.jpg" id="fulImg" alt="">
+    <span onclick="closeImg()">X</span>
+  </div>
+
+  <h1><span>ESTADISTICAS de la Encuesta</span></h1>
+
+  <div class="img-gallery">
+    <img src="Encuesta/1.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/2.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="encuesta/3.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/4.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/5.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/6.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/7.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="encuesta/8.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/9.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/10.jpg" onclick="openFulImg(this.src)" alt="">
+    <img src="Encuesta/11.jpg" onclick="openFulImg(this.src)" alt="">
+    
+    
+  </div> 
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="titulo"></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="" class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Inicio </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Equipo </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Contacto </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Video </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Sobre Nosotros </a>
+        </li>
+      </ul>
+      <p class="text">  &copy;2024 APEAM | Todos los derechos reservados</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

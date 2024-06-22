@@ -1,0 +1,51 @@
+.contenedor-tarjetas {
+    display: flex; /* Mostrar las tarjetas en fila */
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en varias filas si es necesario */
+    justify-content: space-around; /* Distribuir las tarjetas con espacio uniforme entre ellas */
+    margin: 0 auto; /* Centrar las tarjetas en la página */
+    width: 80%; /* Ajustar el ancho del contenedor */
+}
+
+.tarjeta {
+    width: 300px; /* Ancho de cada tarjeta */
+    margin: 15px; /* Espacio entre tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.tarjeta:hover {
+    box-shadow: 0 10px 20px rgba(5, 10, 20, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+.tarjeta img {
+    width: 100%; /* Ajustar la imagen al ancho de la tarjeta */
+    height: 180px; /* Altura de la imagen */
+    object-fit: cover; /* Mantener la proporción de la imagen y cubrir toda el área */
+}
+
+.contenido-tarjeta {
+    padding: 15px; /* Padding dentro de la tarjeta */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+h3 {
+    margin-top: 0; /* Eliminar margen superior por defecto */
+}
+
+
+
+
+
+
+
+.contenido-tarjeta p {
+    display: none; /* Ocultar los nombres inicialmente */
+    margin-top: 10px;
+    color: black; /* Color de texto blanco */
+}
+
+.tarjeta:hover .contenido-tarjeta p {
+    display: block; /* Mostrar el nombre al hacer hover */
+}
+
+

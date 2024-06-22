@@ -1,0 +1,9 @@
+.contenedor-seccion {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio entre el título y las tarjetas */
+}
+
+h2 {
+    color: #333; /* Color del título */
+}
+

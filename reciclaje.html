@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<title>
+  Reciclaje escolar como promotor de actividades comunitarias
+</title>
+<html>
+
+<style>
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+  }
+  
+  body{
+    min-height: 100vh;
+  }
+  header .brand img{
+    height: 60px;
+  }
+  .section-main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to left, rgba(74,164,195,.8), rgba(0,0,0,0.1)), 
+    url(22.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+  }
+  
+  .section-main h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+    text-shadow: 0 0 3px #fff, 0 0 3px #000000;
+  }
+  
+  header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    transition: 0.6s;
+  }
+  
+  header.down{
+    background: #1483D5;
+    padding: 15px 80px;
+  }
+  
+  header .brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
+  header .menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header .menu ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .menu ul li{
+    list-style: none;
+  }
+  
+  header .menu a{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color, background;
+  }
+  
+  header .menu a:hover{
+    color: #000;
+    background: #fff;
+  }
+  
+  .section-two{
+    padding: 20px;
+  }
+  
+  header .btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 991px){
+    header, header.down{
+      padding: 20px 40px;
+    }
+    header .btn{
+      display: block;
+    }
+  
+    header .menu{
+      position: fixed;
+      background: #1483D5;
+      min-width: 330px;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      padding: 80px 50px;
+      transition: 0.5s;
+      transition-property: right;
+    }
+  
+    header .menu ul{
+      flex-direction: column;
+    }
+  
+    header .menu.active{
+      right: 0;
+    }
+  
+    header .menu .close-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .menu a{
+      display: block;
+      font-size: 20px;
+      margin: 20px;
+      padding: 0 15px;
+    }
+  }
+  
+  @media (max-width: 600px){
+    .section-main h1{
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: white;
+  }
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #286bcf;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+  }
+  
+  .icon-elem {
+    list-style: none;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  .icon:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .menu-elem {
+    list-style: none;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+  .menu-icon:hover {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  </style>
+  
+  
+  
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonr awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <header>
+        <a href="Apeam.html" class="brand">
+          <img src="white.png">
+        </a>
+        <nav class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul>
+            <li><a href="Apeam.html">Inicio</a></li>
+            <li><a href="reciclaje.html">Reciclaje escolar</a></li>
+            <li><a href="adicciones.html">Vida sin adicciones</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+          </ul>
+        </nav>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </header>
+  
+      <section class="section-main">
+        <h1>Reciclaje escolar como promotor de actividades comunitarias
+        </h1>
+      </section>
+  
+      
+      <script type="text/javascript">
+      //javascript for navigation bar effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('down', window.scrollY > 0);
+  
+        //change logo
+        var logo = document.querySelector(".brand img");
+      if (window.scrollY>0) {
+        logo.setAttribute('src', 'white.png');
+      }else{
+        logo.setAttribute('src', 'white.png');
+      }
+  
+      });
+  
+      //javascript for responsive navigation sidebar menu
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+  
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+      </script>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  <h2 class="titulo"></h2>
+  
+  
+  
+  
+  
+  
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+  </head>
+  <body>
+    <div class="row">
+    <div class="left"> 
+      <img src="foto/9.jpg" alt="">
+    </div>
+
+    <div class="right">
+<div class="content">
+  <H2>Planteamiento del PROBLEMA:</H2>
+  <p>
+    Al no existir medios de comicación, difusión que nos informen 
+    sobre el tema del reciclaje pueden suceder consecuencias graves para 
+    el medio ambiente. Nuestros compañeros de los grupos a,b de 3ros hicieron 
+    contenedores para separar los tipos de basura a lo cual los demas compañeros de los
+     diferentes grados y grupos no respetaron el material,
+    y no siguieron instrucciones durando tan solo una semana.
+  </p>
+</div>
+
+    </div>
+  </div>
+
+  </body>
+  </html>
+
+  <h2 class="titulo"></h2>
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+  </head>
+  <body>
+    <div class="row">
+    <div class="left"> 
+      <img src="foto/10.jpg" alt="">
+    </div>
+
+    <div class="right">
+<div class="content">
+  <H2>Materiales comúnmente reciclables: </H2>
+  <ol>
+
+<p>
+  
+
+  <li><strong>Papel y cartón:</strong> Periódicos, revistas, folletos, cajas de cartón, bolsas de papel, etc.</li>
+  <li><strong>Plástico:</strong> Botellas, envases, bolsas, tapas, bandejas, etc. Asegúrate de revisar el número dentro del símbolo de reciclaje para saber si el plástico es reciclable en tu comunidad.
+    <li><strong>Vidrio:</strong> Botellas, frascos, tarros.</li>
+    <li><strong>Metales:</strong> Latas de aluminio, latas de conservas, tapas metálicas, hojalata.</li>
+    <li><strong>Algunos envases de tetra pak:</strong> Asegúrate de revisar las instrucciones en el envase para saber si es reciclable en tu comunidad.</li>
+    <li><strong>Baterías: </strong>Las baterías comunes y recargables deben reciclarse por separado. Busca puntos de reciclaje específicos para baterías.</li>
+    <li><strong>Electrónicos:</strong> Algunos componentes electrónicos como televisores, computadoras, teléfonos celulares y otros pueden ser reciclados. Consulta con las autoridades locales o con tiendas especializadas para saber dónde reciclarlos.</li>
+    <strong>Es importante recordar que las reglas de reciclaje pueden variar según la comunidad. Siempre consulta con las autoridades locales o con el servicio de recolección de residuos para obtener información específica sobre qué se puede reciclar en tu zona.</strong>
+
+
+
+  </p>
+  </ol>
+</div>
+
+    </div>
+  </div>
+
+  </body>
+
+  </html>
+
+
+
+  <h2 class="titulo"></h2>
+
+
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+  </head>
+  <body>
+    <div class="row">
+    <div class="left"> 
+      <img src="foto/11.jpg" alt="">
+    </div>
+
+    <div class="right">
+<div class="content">
+  <H2>Pasos generales para reciclar:</H2>
+  <ol>
+<p> 
+
+  <li><strong>Limpia los materiales reciclables:</strong> Enjuaga los envases de comida y bebidas para eliminar residuos. 
+     Elimina tapas, etiquetas y otros elementos no reciclables.</li>
+      <li><strong>Separa los materiales: </strong> cada tipo de material reciclable en el contenedor correspondiente. 
+        Algunos programas de reciclaje requieren que se separen los materiales por color o tipo de plástico. </li>
+          <li><strong>Aplasta los materiales: </strong> Aplasta las botellas de plástico, latas de aluminio 
+  y cajas de cartón para ahorrar espacio en los contenedores de reciclaje. </li>
+  <li><strong>Lleva los materiales al contenedor de reciclaje:</strong> Deposita los materiales reciclables en el contenedor
+   correspondiente en tu hogar, escuela o lugar de trabajo.</li>
+   <li><strong>Participa en programas de reciclaje especiales:</strong> Algunos programas recolectan materiales como textiles,
+   muebles electrónicos y residuos de construcción. Busca información sobre programas especiales de reciclaje en tu comunidad.</li>
+
+
+
+  </p>
+  </ol>
+</div>
+
+    </div>
+  </div>
+
+  </body>
+  </html>
+
+
+
+
+
+  <h2 class="titulo"></h2>
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+  </head>
+  <body>
+    <div class="row">
+    <div class="left"> 
+      <img src="foto/12.jpg" alt="">
+    </div>
+
+    <div class="right">
+<div class="content">
+  <H2>Beneficios del reciclaje:</H2>
+  <ol>
+<p> <strong>El reciclaje ofrece numerosos beneficios ambientales, económicos y sociales:</strong>
+
+  <li><strong> Beneficios ambientales: </strong> </li>
+  <ul>
+  <strong><li>Reduce la contaminación:</li></strong> Al reciclar, se reduce la necesidad de extraer y procesar materias primas, lo que disminuye la contaminación del aire, el agua y el suelo.
+  <strong><li>Conserva los recursos naturales:</li> </strong>El reciclaje ayuda a conservar recursos valiosos como árboles, agua, petróleo y minerales.
+  <strong><li>Disminuye la cantidad de residuos en los vertederos:</li></strong> Los vertederos ocupan espacio en la tierra y pueden contaminar el agua subterránea. El reciclaje ayuda a reducir la cantidad de residuos que se envían a los vertederos.
+  </ul>
+  <li><strong>Beneficios económicos:</strong></li>
+  <ul>
+ <strong><li> Ahorra dinero:</li></strong> El reciclaje puede ahorrar dinero a las empresas y comunidades al reducir los costos de eliminación de residuos y al crear empleos en la industria del reciclaje.
+  <strong><li>Crea empleos:</li></strong> La industria del reciclaje crea empleos en la recolección, clasificación, procesamiento y fabricación de productos reciclados.
+  <strong><li>Promueve la economía circular:</li></strong> El reciclaje es un componente clave de la economía circular, que tiene como objetivo reducir el desperdicio y crear un sistema de producción y consumo más sostenible.
+  </ul>
+  <li><strong>Beneficios sociales:</strong></li>
+  <ul>
+  <strong>Mejora la calidad de vida:</strong> La reducción de la contaminación y la conservación de los recursos naturales contribuyen a mejorar la calidad de vida de las personas.
+  <strong><li>Educa y sensibiliza a la población:</li></strong> El reciclaje ayuda a educar a las personas sobre la importancia de proteger el medio ambiente y a promover la responsabilidad ambiental.
+  <strong><li>Fomenta la participación comunitaria:</li></strong> Los programas de reciclaje pueden fomentar la participación comunitaria y crear un sentido de responsabilidad compartida por el medio ambiente.
+  </ul>
+  <strong>En resumen, el reciclaje es una práctica importante que beneficia al medio ambiente, 
+  la economía y la sociedad. Al reciclar, podemos reducir nuestro impacto en el planeta y crear un futuro más sostenible.</strong>
+
+
+
+  </p>
+</ol>
+</div>
+
+    </div>
+  </div>
+
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+
+
+  <h2 class="titulo">Imagenes</h2>
+
+
+
+  <div class="slider-box">
+    <ul>
+      <li>
+        <img src="foto/5.png" alt="">
+        <div class="texto">
+          <h2>¡Recicla PET y ayuda a nuestro planeta!</h2>
+          <p>
+            Tu participación es importante para hacer de nuestra escuela un lugar más sostenible. 
+            ¡Reciclemos juntos y construyamos un futuro más verde!
+          </p>
+        </div>
+      </li>
+      <li>
+        <img src="foto/6.jpg" alt="">
+        <div class="texto">
+          <h2>¿Qué puedes hacer?</h2>
+          <p>
+            Trae tus botellas de PET vacías y limpias a los contenedores de reciclaje 
+            ubicados en la escuela.Difunde la iniciativa entre tus compañeros, amigos y familiares.
+            Participa en las actividades de concientización sobre el reciclaje que se organizarán en la escuela.
+          </p>
+        </div>
+      </li>
+      <li>
+        <img src="foto/7.jpg" alt="">
+        <div class="texto">
+          <h2>¿Por qué reciclar PET?</h2>
+          <p>
+            El reciclaje de PET ayuda a reducir la contaminación del medio ambiente.
+Disminuye la necesidad de extraer nuevos recursos naturales.
+Ahorra energía y agua.
+Contribuye a la creación de nuevos productos a partir de materiales reciclados.
+          </p>
+        </div>
+      </li>
+      <li>
+        <img src="foto/8.jpg" alt="">
+        <div class="texto">
+          <h2>¡Anímate a participar!</h2>
+          <p>
+            Solo se aceptan botellas de PET vacías y limpias.
+Retira las tapas de las botellas antes de depositarlas en los contenedores.
+Aplasta las botellas para reducir el espacio que ocupan.
+          </p>
+        </div>
+      </li>
+    </ul>
+
+
+
+
+
+  </div>
+  
+</body>
+</html>
+
+
+
+<h2 class="titulo"></h2>
+
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <link rel="stylesheet" href="style.css" />
+      <title></title>
+    </head>
+    <body>
+      <footer class="footer">
+        <ul class="social-icon">
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Inicio </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Equipo </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Contacto </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Video </a>
+          </li>
+          <li class="menu-elem">
+            <a href="" class="menu-icon"> Sobre Nosotros </a>
+          </li>
+        </ul>
+        <p class="text">  &copy;2024 APEAM | Todos los derechos reservados</p>
+      </footer>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+    </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
